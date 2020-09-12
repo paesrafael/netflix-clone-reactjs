@@ -62,11 +62,13 @@ export default function MovieListCard({ title, movies, slug }) {
       >
         <div className="movie-row-content slider-hover-trigger-layer">
           <div className="slider">
-            <span className="handle handle-prev active" onClick={handlePrev}>
-              <b className="indicator-icon">
-                <FontAwesomeIcon icon={faChevronLeft} />
-              </b>
-            </span>
+            {!!sliderScrollX && (
+              <span className="handle handle-prev active" onClick={handlePrev}>
+                <b className="indicator-icon">
+                  <FontAwesomeIcon icon={faChevronLeft} />
+                </b>
+              </span>
+            )}
 
             <div className="slider-mask show-peek">
               <div
