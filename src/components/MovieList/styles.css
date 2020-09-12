@@ -1,4 +1,9 @@
 .movie-list-card {
+  padding: 0;
+  margin: 3vw 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   overflow: hidden;
   z-index: 1;
 }
