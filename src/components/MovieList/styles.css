@@ -1,0 +1,4 @@
+.movie-list-card {
+  overflow: hidden;
+  z-index: 1;
+}
