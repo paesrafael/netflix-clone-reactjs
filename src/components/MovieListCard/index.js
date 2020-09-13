@@ -21,7 +21,7 @@ export default function MovieListCard({ title, movies, slug }) {
     }
 
     imageSizeLoad()
-  }, [])
+  }, [slug])
 
   function handlePrev() {
     let scrollX = sliderScrollX + Math.round(window.innerWidth / 2)
