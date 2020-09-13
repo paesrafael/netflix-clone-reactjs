@@ -43,4 +43,19 @@ export default {
       },
     ]
   },
+
+  getMovieInformation: async (movieID, types) => {
+    let information = {}
+    let type = 'tv'
+
+    if (movieID) {
+      if (types === 'movie') {
+        type = 'movie'
+      }
+
+      information = await fetchList(`/${type}/${movieID}?${apiRequired}`)
+    }
+
+    return information
+  },
 }
